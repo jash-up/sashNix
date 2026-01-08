@@ -84,6 +84,9 @@
     openFirewall = true;
   };
 
+  # enabling ailscale
+  services.tailscale.enable = true;
+
   virtualisation = {
     libvirtd = {
       enable = true;
@@ -121,6 +124,8 @@
     openFirewall = true;
     host = "0.0.0.0";
   };
+
+  programs.fuse.userAllowOther = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
