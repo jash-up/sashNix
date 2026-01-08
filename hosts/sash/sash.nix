@@ -111,6 +111,12 @@
     '';
   };
 
+  # Ollama
+  services.ollama = {
+    enable = true;
+    openFirewall = true;
+    host = "0.0.0.0";
+  };
 
    # Configure keymap in X11
   services.xserver.xkb = {
@@ -153,6 +159,7 @@
     #  thunderbird
     ];
   };
+
 
   # Install firefox.
   programs.firefox.enable = true;
@@ -201,13 +208,15 @@
     #burpsuite
     #hashcat
     #john
-    ffmpeg_7-full
+    #ffmpeg_7-full
     peaclock
     #inetutils
     thunar
     gparted
     #cowsay
     openssh
+    rclone
+
   ];
 
   # Check the proper system state version
