@@ -39,3 +39,5 @@ But later, probably in a few months I'll set up hyprland dot files as well as ho
 
 #got the thing on ashPC and currently cloned on sash
 #got it working on sash lesgooii
+
+so i reinstalled sash cuz something was wrong with the nixstore thingi
