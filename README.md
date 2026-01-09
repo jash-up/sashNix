@@ -41,3 +41,7 @@ But later, probably in a few months I'll set up hyprland dot files as well as ho
 #got it working on sash lesgooii
 
 so i reinstalled sash cuz something was wrong with the nixstore thingi
+
+Added gdrive support to /home/$USER/gdrive folder using rclone in the flake.nix to be run as an app
+nix run .#mount-gdrive
+nix run .#umount-gdrive
